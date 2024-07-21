@@ -1,0 +1,194 @@
+/* --------------------------------Media Queries Start---------------------------- */
+/* Laptop */
+@media (max-width: 1366px) {
+  html {
+    font-size: 85%;
+  }
+}
+
+/* tablet Hight */
+@media (max-width: 820px) {
+  html {
+    font-size: 80%;
+  }
+
+  .about .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card {
+    flex-basis: calc(93.3% - 40px);
+    max-width: 80px;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 75%;
+  }
+
+  #hamburger-menu {
+    display: inline-block;
+  }
+  /* ----------------------------Navbar---------------------------- */
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    width: 15rem;
+    /* height: 25vh; */
+    transition: 0.5s;
+    border-radius: 10px;
+    margin-right: 10px;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(39, 54, 80, 0.404);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.685);
+  }
+
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+
+  .navbar .navbar-nav a {
+    color: var(--c-white);
+    display: block;
+    margin: 1.5rem;
+    padding: 0.2rem;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .navbar .navbar-nav a::after {
+    transform-origin: 0 0;
+  }
+
+  .navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.3);
+  }
+
+  /* ----------------------------Hero---------------------------- */
+  .hero .content h1 {
+    font-size: 2.7em;
+  }
+
+  .hero .content p {
+    font-size: 1.2rem;
+  }
+
+  .hero .content .cta {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  /* ----------------------------slide---------------------------- */
+  .slideshow-container .mySlides img {
+    border-radius: 10px;
+    height: 30rem;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  /* ----------------------------Card---------------------------- */
+  .card {
+    flex-basis: calc(33.3% - 40px);
+    max-width: 100px;
+  }
+
+  .card-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card-visi {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  /* ----------------------------About---------------------------- */
+  .about .row {
+    flex-wrap: wrap;
+  }
+
+  .about .row .about-img img {
+    height: 30rem;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .about .row .content {
+    padding: 0;
+  }
+
+  .about .row .content h3 {
+    margin-top: 1rem;
+    font-size: 1.9rem;
+  }
+
+  .about .row .content p {
+    font-size: 1.2rem;
+  }
+
+  /* ----------------------------produk---------------------------- */
+  .produk {
+    padding-top: 6rem;
+  }
+  .produk p {
+    font-size: 1.4rem;
+  }
+
+  .produk-card a h3 {
+    font-size: 2rem;
+  }
+
+  .produk-card a p {
+    font-size: 1.4rem;
+  }
+
+  /* ----------------------------produk---------------------------- */
+  .contact .row {
+    flex-wrap: wrap;
+  }
+
+  .contact .row .map {
+    height: 30rem;
+  }
+
+  .contact .row form {
+    padding-top: 0;
+  }
+}
+/* ----------------------------Detail Produk---------------------------- */
+/* Phone */
+@media (max-width: 450px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .filter-item {
+    width: calc(50% - 30px);
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .filter-item {
+    width: calc(33.3333% - 30px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .filter-item {
+    width: calc(25% - 30px);
+  }
+}
+/* --------------------------------Media Queries end---------------------------- */
